@@ -1,0 +1,128 @@
+# ============================================================
+# SALESFORCE / SFDX
+# ============================================================
+.sf/
+.sfdx/
+*.dup
+.salesforcedx/
+
+# Scratch org config (contient des infos sensibles)
+config/project-scratch-def.json
+
+# Debug logs Salesforce
+*.log
+logs/
+
+# ============================================================
+# SECRETS & CREDENTIALS — NE JAMAIS COMMITTER
+# ============================================================
+.env
+.env.local
+.env.*.local
+*.env
+secrets/
+credentials/
+*.pem
+*.key
+*.p12
+*.pfx
+
+# MCP config local (avec tokens)
+.mcp.json.local
+
+# ============================================================
+# NODE / NPM
+# ============================================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+.npm/
+
+# ============================================================
+# PYTHON (scripts data)
+# ============================================================
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+*.pyc
+
+# Scripts one-shot (debug / migration / audit) — garder en local uniquement
+scripts/data/*.py
+scripts/data/*.txt
+scripts/data/*.sh
+scripts/data/check_*.apex
+scripts/data/inventory_*.apex
+scripts/data/list_*.apex
+scripts/data/demo_data*.apex
+scripts/apex/
+
+# ============================================================
+# IDE & EDITEURS
+# ============================================================
+.vscode/settings.json
+.vscode/*.code-workspace
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ============================================================
+# OS
+# ============================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Desktop.ini
+
+# ============================================================
+# DEPLOY / BUILD ARTIFACTS & RÉSULTATS DE COMMANDES
+# ============================================================
+*.zip
+*.jar
+deploy/
+.deployignore
+
+# Fichiers de résultats deploy/test générés localement
+deploy_*.json
+deploy_*.txt
+test_*.json
+test_*.txt
+test_result*.txt
+test_run_output.txt
+full_deploy_out.txt
+permset_deploy_out.txt
+validation-result.txt
+
+# Scripts one-shot de génération (non réutilisables)
+gen.js
+gen.ps1
+nul
+
+# ============================================================
+# CLAUDE CODE / AI TOOLS
+# ============================================================
+# settings.local.json = chemins machine-spécifiques (ne pas partager)
+.claude/settings.local.json
+# Historique de sessions et plans de travail temporaires
+.claude/projects/
+.claude/plans/
+
+# ============================================================
+# FICHIERS LOCAUX DIVERS
+# ============================================================
+/data/

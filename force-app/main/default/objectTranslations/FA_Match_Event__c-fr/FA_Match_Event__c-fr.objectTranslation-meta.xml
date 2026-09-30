@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <gender>Masculine</gender>
+    <fields>
+        <label>Type d'Événement</label>
+        <name>Event_Type__c</name>
+        <picklistValues>
+            <masterLabel>Goal</masterLabel>
+            <translation>But</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assist</masterLabel>
+            <translation>Passe Décisive</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yellow Card</masterLabel>
+            <translation>Carton Jaune</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red Card</masterLabel>
+            <translation>Carton Rouge</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Substitution In</masterLabel>
+            <translation>Remplacement Entrant</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Substitution Out</masterLabel>
+            <translation>Remplacement Sortant</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Injury Event</masterLabel>
+            <translation>Blessure</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Joueur</label>
+        <name>Player__c</name>
+    </fields>
+</CustomObjectTranslation>

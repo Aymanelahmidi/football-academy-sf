@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <gender>Feminine</gender>
+    <fields>
+        <label>Catégorie</label>
+        <name>Category__c</name>
+    </fields>
+    <fields>
+        <label>Entraînneur</label>
+        <name>Coach__c</name>
+    </fields>
+    <fields>
+        <label>Heure de Fin</label>
+        <name>End_Time__c</name>
+    </fields>
+    <fields>
+        <label>Lieu</label>
+        <name>Location__c</name>
+    </fields>
+    <fields>
+        <label>Objectifs</label>
+        <name>Objectives__c</name>
+    </fields>
+    <fields>
+        <label>Date de Séance</label>
+        <name>Session_Date__c</name>
+    </fields>
+    <fields>
+        <label>Heure de Début</label>
+        <name>Start_Time__c</name>
+    </fields>
+    <fields>
+        <label>Statut</label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Scheduled</masterLabel>
+            <translation>Planifié</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation>En Cours</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation>Terminé</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation>Annulé</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Type</label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Technical</masterLabel>
+            <translation>Technique</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tactical</masterLabel>
+            <translation>Tactique</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Physical</masterLabel>
+            <translation>Physique</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Friendly Match</masterLabel>
+            <translation>Match Amical</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recovery</masterLabel>
+            <translation>Récupération</translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

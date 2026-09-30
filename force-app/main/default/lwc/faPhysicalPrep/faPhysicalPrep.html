@@ -1,0 +1,37 @@
+<template>
+    <lightning-card title="Préparation Physique" icon-name="standard:fitness">
+        <div class="slds-p-around_small">
+            <div class="slds-grid slds-gutters slds-m-bottom_small">
+                <div class="slds-col slds-size_1-of-3">
+                    <lightning-combobox label="Catégorie" value={selectedCategory} options={categories} onchange={handleCategoryChange}></lightning-combobox>
+                </div>
+            </div>
+            <lightning-tabset active-tab-value={activeTab} onactive={handleTabChange}>
+                <lightning-tab label="Programmes" value="programs">
+                    <template if:true={isLoading}><lightning-spinner alternative-text="Chargement..."></lightning-spinner></template>
+                    <template if:false={isLoading}>
+                        <div class="slds-grid slds-gutters slds-wrap">
+                            <template for:each={programs} for:item="p">
+                                <div key={p.Id} class="slds-col slds-size_1-of-2 slds-p-around_x-small">
+                                    <div class="slds-box">
+                                        <h3 class="slds-text-heading_small">{p.Name}</h3>
+                                        <p class="slds-text-body_small">Type: {p.Type__c}</p>
+                                        <p class="slds-text-body_small">Fréquence: {p.Weekly_Frequency__c}x/semaine</p>
+                                        <p class="slds-text-body_small">Période: <lightning-formatted-date-time value={p.Start_Date__c}></lightning-formatted-date-time> → <lightning-formatted-date-time value={p.End_Date__c}></lightning-formatted-date-time></p>
+                                        <lightning-badge label={p.Status__c} class="slds-m-top_xx-small"></lightning-badge>
+                                        <template if:true={p.Objectives__c}>
+                                            <p class="slds-m-top_x-small slds-text-body_small">{p.Objectives__c}</p>
+                                        </template>
+                                    </div>
+                                </div>
+                            </template>
+                        </div>
+                    </template>
+                </lightning-tab>
+                <lightning-tab label="Tests de Condition" value="tests">
+                    <lightning-datatable key-field="Id" data={fitnessTests} columns={testColumns} hide-checkbox-column></lightning-datatable>
+                </lightning-tab>
+            </lightning-tabset>
+        </div>
+    </lightning-card>
+</template>

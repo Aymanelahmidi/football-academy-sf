@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Test_Type__c</fullName>
+    <label>Test Type</label>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>VAMEVAL</fullName>
+                <default>false</default>
+                <label>VAMEVAL</label>
+            </value>
+            <value>
+                <fullName>Cooper</fullName>
+                <default>false</default>
+                <label>Cooper</label>
+            </value>
+            <value>
+                <fullName>Sprint 30m</fullName>
+                <default>false</default>
+                <label>Sprint 30m</label>
+            </value>
+            <value>
+                <fullName>Sprint 10m</fullName>
+                <default>false</default>
+                <label>Sprint 10m</label>
+            </value>
+            <value>
+                <fullName>Yo-Yo</fullName>
+                <default>false</default>
+                <label>Yo-Yo</label>
+            </value>
+            <value>
+                <fullName>Saut Vertical</fullName>
+                <default>false</default>
+                <label>Saut Vertical</label>
+            </value>
+            <value>
+                <fullName>Flexibility</fullName>
+                <default>false</default>
+                <label>Flexibility</label>
+            </value>
+            <value>
+                <fullName>Force Max</fullName>
+                <default>false</default>
+                <label>Force Max</label>
+            </value>
+            <value>
+                <fullName>Agilité</fullName>
+                <default>false</default>
+                <label>Agilité</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <required>true</required>
+</CustomField>

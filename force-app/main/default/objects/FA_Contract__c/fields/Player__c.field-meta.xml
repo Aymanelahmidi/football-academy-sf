@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Player__c</fullName>
+    <label>Player</label>
+    <type>MasterDetail</type>
+    <referenceTo>FA_Player__c</referenceTo>
+    <relationshipName>Contracts</relationshipName>
+    <relationshipLabel>Contrats</relationshipLabel>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+</CustomField>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Staff_Role__c</fullName>
+    <label>Staff Role</label>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Coach</fullName>
+                <default>false</default>
+                <label>Coach</label>
+            </value>
+            <value>
+                <fullName>Doctor</fullName>
+                <default>false</default>
+                <label>Doctor</label>
+            </value>
+            <value>
+                <fullName>Fitness Coach</fullName>
+                <default>false</default>
+                <label>Fitness Coach</label>
+            </value>
+            <value>
+                <fullName>Admin</fullName>
+                <default>false</default>
+                <label>Admin</label>
+            </value>
+            <value>
+                <fullName>Analyst</fullName>
+                <default>false</default>
+                <label>Analyst</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <required>true</required>
+</CustomField>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <gender>Feminine</gender>
+    <fields>
+        <label>Données Dessin</label>
+        <name>Drawing_Data__c</name>
+    </fields>
+    <fields>
+        <label>Fin Timestamp (sec)</label>
+        <name>End_Timestamp__c</name>
+    </fields>
+    <fields>
+        <label>Libellé</label>
+        <name>Label__c</name>
+    </fields>
+    <fields>
+        <label>Joueur</label>
+        <name>Player__c</name>
+    </fields>
+    <fields>
+        <label>Timestamp (sec)</label>
+        <name>Timestamp__c</name>
+    </fields>
+    <fields>
+        <label>Analyse Vidéo</label>
+        <name>Video_Analysis__c</name>
+    </fields>
+</CustomObjectTranslation>

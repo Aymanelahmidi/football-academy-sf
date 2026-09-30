@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <gender>Masculine</gender>
+    <fields>
+        <label>Adresse</label>
+        <name>Address__c</name>
+    </fields>
+    <fields>
+        <label>Catégorie</label>
+        <name>Category__c</name>
+    </fields>
+    <fields>
+        <label>Date de Naissance</label>
+        <name>Date_of_Birth__c</name>
+    </fields>
+    <fields>
+        <label>Prénom</label>
+        <name>First_Name__c</name>
+    </fields>
+    <fields>
+        <label>Taille (cm)</label>
+        <name>Height__c</name>
+    </fields>
+    <fields>
+        <label>Actif</label>
+        <name>Is_Active__c</name>
+    </fields>
+    <fields>
+        <label>Numéro de Maillot</label>
+        <name>Jersey_Number__c</name>
+    </fields>
+    <fields>
+        <label>Date d'Inscription</label>
+        <name>Join_Date__c</name>
+    </fields>
+    <fields>
+        <label>Nom</label>
+        <name>Last_Name__c</name>
+    </fields>
+    <fields>
+        <label>Nationalité</label>
+        <name>Nationality__c</name>
+    </fields>
+    <fields>
+        <label>Nom du Parent</label>
+        <name>Parent_Name__c</name>
+    </fields>
+    <fields>
+        <label>Téléphone Parent</label>
+        <name>Parent_Phone__c</name>
+    </fields>
+    <fields>
+        <label>Téléphone</label>
+        <name>Phone__c</name>
+    </fields>
+    <fields>
+        <label>Poste</label>
+        <name>Position__c</name>
+        <picklistValues>
+            <masterLabel>Goalkeeper</masterLabel>
+            <translation>Gardien</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Defender</masterLabel>
+            <translation>Défenseur</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Midfielder</masterLabel>
+            <translation>Milieu</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Forward</masterLabel>
+            <translation>Attaquant</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Pied Préféré</label>
+        <name>Preferred_Foot__c</name>
+        <picklistValues>
+            <masterLabel>Right</masterLabel>
+            <translation>Droit</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Left</masterLabel>
+            <translation>Gauche</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ambidextrous</masterLabel>
+            <translation>Ambidextre</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Statut</label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation>Actif</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Injured</masterLabel>
+            <translation>Blessé</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suspended</masterLabel>
+            <translation>Suspendu</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation>Inactif</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Poids (kg)</label>
+        <name>Weight__c</name>
+    </fields>
+</CustomObjectTranslation>

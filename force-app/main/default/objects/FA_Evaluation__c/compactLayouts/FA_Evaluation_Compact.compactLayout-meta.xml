@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FA_Evaluation_Compact</fullName>
+    <fields>Player__c</fields>
+    <fields>Type__c</fields>
+    <fields>Evaluation_Date__c</fields>
+    <fields>Overall_Score__c</fields>
+    <fields>Technical_Score__c</fields>
+    <fields>Physical_Score__c</fields>
+    <label>Évaluation - Compact</label>
+</CompactLayout>

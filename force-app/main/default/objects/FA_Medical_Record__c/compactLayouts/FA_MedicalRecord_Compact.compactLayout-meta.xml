@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FA_MedicalRecord_Compact</fullName>
+    <fields>Player__c</fields>
+    <fields>Blood_Type__c</fields>
+    <fields>Fitness_Status__c</fields>
+    <fields>Last_Checkup_Date__c</fields>
+    <label>Dossier Médical - Compact</label>
+</CompactLayout>

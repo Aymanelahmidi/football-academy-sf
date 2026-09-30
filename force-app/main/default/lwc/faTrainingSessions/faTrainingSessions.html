@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Séances d'Entraînement" icon-name="standard:coaching">
+        <lightning-button label="Nouvelle Séance" variant="brand" slot="actions" onclick={handleNewSession}></lightning-button>
+        <div class="slds-p-around_small">
+            <div class="slds-grid slds-gutters slds-m-bottom_small">
+                <div class="slds-col slds-size_1-of-3">
+                    <lightning-combobox label="Catégorie" value={selectedCategory} options={categories} onchange={handleCategoryChange}></lightning-combobox>
+                </div>
+            </div>
+            <template if:true={isLoading}>
+                <lightning-spinner alternative-text="Chargement..."></lightning-spinner>
+            </template>
+            <template if:false={isLoading}>
+                <lightning-datatable key-field="Id" data={sessions} columns={columns} onrowaction={handleRowAction} hide-checkbox-column></lightning-datatable>
+            </template>
+        </div>
+    </lightning-card>
+</template>

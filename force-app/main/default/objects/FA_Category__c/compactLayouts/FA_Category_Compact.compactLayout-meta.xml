@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FA_Category_Compact</fullName>
+    <fields>Short_Name__c</fields>
+    <fields>Age_Min__c</fields>
+    <fields>Age_Max__c</fields>
+    <fields>Max_Players__c</fields>
+    <fields>Is_Active__c</fields>
+    <label>Catégorie - Compact</label>
+</CompactLayout>

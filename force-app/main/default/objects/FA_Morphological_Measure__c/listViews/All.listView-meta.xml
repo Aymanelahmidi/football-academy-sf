@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Player__c</columns>
+    <columns>Measure_Date__c</columns>
+    <columns>Height_Cm__c</columns>
+    <columns>Weight_Kg__c</columns>
+    <columns>BMI__c</columns>
+    <columns>Body_Fat_Percent__c</columns>
+    <columns>Muscle_Mass_Kg__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Toutes les mesures morphologiques</label>
+</ListView>

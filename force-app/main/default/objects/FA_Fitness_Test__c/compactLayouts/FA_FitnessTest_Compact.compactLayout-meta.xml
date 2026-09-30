@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FA_FitnessTest_Compact</fullName>
+    <fields>Player__c</fields>
+    <fields>Test_Type__c</fields>
+    <fields>Test_Date__c</fields>
+    <fields>Result__c</fields>
+    <fields>Unit__c</fields>
+    <fields>Percentile__c</fields>
+    <label>Test Physique - Compact</label>
+</CompactLayout>

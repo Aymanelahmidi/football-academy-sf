@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <gender>Masculine</gender>
+    <fields>
+        <label>Date de Fin</label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <label>Cotisation Mensuelle</label>
+        <name>Monthly_Fee__c</name>
+    </fields>
+    <fields>
+        <label>Joueur</label>
+        <name>Player__c</name>
+    </fields>
+    <fields>
+        <label>Date de Début</label>
+        <name>Start_Date__c</name>
+    </fields>
+    <fields>
+        <label>Statut</label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation>Actif</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expired</masterLabel>
+            <translation>Expiré</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Terminated</masterLabel>
+            <translation>Résilié</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Type</label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Academy</masterLabel>
+            <translation>Formation</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Professional</masterLabel>
+            <translation>Professionnel</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loan</masterLabel>
+            <translation>Prêt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trial</masterLabel>
+            <translation>Essai</translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

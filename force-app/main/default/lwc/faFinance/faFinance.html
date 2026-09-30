@@ -1,0 +1,31 @@
+<template>
+    <lightning-card title="Gestion Financière" icon-name="standard:currency">
+        <div class="slds-p-around_small">
+            <div class="slds-grid slds-gutters slds-m-bottom_medium">
+                <div class="slds-col slds-size_1-of-3">
+                    <div class="slds-box slds-text-align_center">
+                        <p class="slds-text-heading_medium slds-text-color_success">{totalRevenue} MAD</p>
+                        <p class="slds-text-body_small">Revenus</p>
+                    </div>
+                </div>
+                <div class="slds-col slds-size_1-of-3">
+                    <div class="slds-box slds-text-align_center">
+                        <p class="slds-text-heading_medium slds-text-color_error">{totalExpenses} MAD</p>
+                        <p class="slds-text-body_small">Dépenses</p>
+                    </div>
+                </div>
+                <div class="slds-col slds-size_1-of-3">
+                    <div class="slds-box slds-text-align_center">
+                        <p class="slds-text-heading_medium">{balance} MAD</p>
+                        <p class="slds-text-body_small">Solde</p>
+                    </div>
+                </div>
+            </div>
+            <lightning-combobox label="Type" value={selectedType} options={typeOptions} onchange={handleTypeChange} class="slds-m-bottom_small"></lightning-combobox>
+            <template if:true={isLoading}><lightning-spinner alternative-text="Chargement..."></lightning-spinner></template>
+            <template if:false={isLoading}>
+                <lightning-datatable key-field="Id" data={transactions} columns={columns} hide-checkbox-column sorted-by="Transaction_Date__c" default-sort-direction="desc"></lightning-datatable>
+            </template>
+        </div>
+    </lightning-card>
+</template>

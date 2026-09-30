@@ -1,0 +1,103 @@
+<template>
+    <div class="slds-page-header slds-m-bottom_medium">
+        <div class="slds-page-header__row">
+            <div class="slds-page-header__col-title">
+                <h1 class="slds-page-header__title">Tableau de Bord</h1>
+                <p class="slds-text-body_small slds-text-color_weak">
+                    Vue d'ensemble de l'académie — {todayFormatted}
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <template if:true={isLoading}>
+        <lightning-spinner alternative-text="Chargement..." size="medium"></lightning-spinner>
+    </template>
+
+    <template if:false={isLoading}>
+        <!-- KPI Cards -->
+        <div class="slds-grid slds-gutters slds-wrap slds-m-bottom_medium">
+            <div class="slds-col slds-size_1-of-4 slds-p-around_x-small">
+                <lightning-card title="Joueurs Inscrits" icon-name="standard:people">
+                    <div class="slds-p-horizontal_small">
+                        <p class="slds-text-heading_large">{totalPlayers}</p>
+                        <p class="slds-text-body_small slds-text-color_weak">{totalCategories} catégories</p>
+                    </div>
+                </lightning-card>
+            </div>
+            <div class="slds-col slds-size_1-of-4 slds-p-around_x-small">
+                <lightning-card title="Taux de Présence" icon-name="standard:task2">
+                    <div class="slds-p-horizontal_small">
+                        <p class="slds-text-heading_large">{attendanceRate}</p>
+                        <p class="slds-text-body_small slds-text-color_weak">{totalPresent} présences</p>
+                    </div>
+                </lightning-card>
+            </div>
+            <div class="slds-col slds-size_1-of-4 slds-p-around_x-small">
+                <lightning-card title="Blessés / Inaptes" icon-name="standard:first_non_empty">
+                    <div class="slds-p-horizontal_small">
+                        <p class="slds-text-heading_large">{activeInjuries}</p>
+                        <p class="slds-text-body_small slds-text-color_weak">{injuriesInRehab} en rééducation</p>
+                    </div>
+                </lightning-card>
+            </div>
+            <div class="slds-col slds-size_1-of-4 slds-p-around_x-small">
+                <lightning-card title="Matchs à Venir" icon-name="standard:event">
+                    <div class="slds-p-horizontal_small">
+                        <p class="slds-text-heading_large">{upcomingMatchCount}</p>
+                        <p class="slds-text-body_small slds-text-color_weak">{matchRecord}</p>
+                    </div>
+                </lightning-card>
+            </div>
+        </div>
+
+        <!-- Match Stats & Recent Activity -->
+        <div class="slds-grid slds-gutters slds-wrap">
+            <div class="slds-col slds-size_1-of-2 slds-p-around_x-small">
+                <lightning-card title="Bilan Matchs" icon-name="standard:goals">
+                    <div class="slds-p-around_small">
+                        <div class="slds-grid slds-gutters slds-text-align_center">
+                            <div class="slds-col">
+                                <p class="slds-text-heading_medium slds-text-color_success">{wins}</p>
+                                <p class="slds-text-body_small">Victoires</p>
+                            </div>
+                            <div class="slds-col">
+                                <p class="slds-text-heading_medium">{draws}</p>
+                                <p class="slds-text-body_small">Nuls</p>
+                            </div>
+                            <div class="slds-col">
+                                <p class="slds-text-heading_medium slds-text-color_error">{losses}</p>
+                                <p class="slds-text-body_small">Défaites</p>
+                            </div>
+                        </div>
+                        <div class="slds-m-top_small">
+                            <p>Buts marqués: <strong>{goalsFor}</strong></p>
+                            <p>Buts encaissés: <strong>{goalsAgainst}</strong></p>
+                            <p>Matchs joués: <strong>{matchesPlayed}</strong></p>
+                        </div>
+                    </div>
+                </lightning-card>
+            </div>
+            <div class="slds-col slds-size_1-of-2 slds-p-around_x-small">
+                <lightning-card title="Prochains Événements" icon-name="standard:date_input">
+                    <div class="slds-p-around_small">
+                        <template if:true={upcomingEvents}>
+                            <template for:each={upcomingEvents} for:item="event">
+                                <div key={event.id} class="slds-p-vertical_xx-small slds-border_bottom">
+                                    <p class="slds-text-body_regular">
+                                        <lightning-icon icon-name="standard:event" size="x-small"></lightning-icon>
+                                        &nbsp;{event.title} — {event.category}
+                                    </p>
+                                    <p class="slds-text-body_small slds-text-color_weak">{event.date} à {event.time}</p>
+                                </div>
+                            </template>
+                        </template>
+                        <template if:false={upcomingEvents}>
+                            <p class="slds-text-color_weak">Aucun événement à venir</p>
+                        </template>
+                    </div>
+                </lightning-card>
+            </div>
+        </div>
+    </template>
+</template>

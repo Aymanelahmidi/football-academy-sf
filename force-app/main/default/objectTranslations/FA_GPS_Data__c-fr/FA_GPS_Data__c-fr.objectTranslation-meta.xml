@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <gender>Feminine</gender>
+    <fields>
+        <label>Charge Aiguë</label>
+        <name>Acute_Load__c</name>
+    </fields>
+    <fields>
+        <label>FC Moyenne (bpm)</label>
+        <name>Avg_Heart_Rate__c</name>
+    </fields>
+    <fields>
+        <label>Vitesse Moyenne (km/h)</label>
+        <name>Avg_Speed_Kmh__c</name>
+    </fields>
+    <fields>
+        <label>Calories Brûlées</label>
+        <name>Calories_Burned__c</name>
+    </fields>
+    <fields>
+        <label>Charge Chronique</label>
+        <name>Chronic_Load__c</name>
+    </fields>
+    <fields>
+        <label>Contexte</label>
+        <name>Context__c</name>
+    </fields>
+    <fields>
+        <label>Distance Haute Intensité (km)</label>
+        <name>High_Intensity_Distance__c</name>
+    </fields>
+    <fields>
+        <label>FC Max (bpm)</label>
+        <name>Max_Heart_Rate__c</name>
+    </fields>
+    <fields>
+        <label>Vitesse Max (km/h)</label>
+        <name>Max_Speed_Kmh__c</name>
+    </fields>
+    <fields>
+        <label>Joueur</label>
+        <name>Player__c</name>
+    </fields>
+    <fields>
+        <label>Préparateur</label>
+        <name>Preparateur__c</name>
+    </fields>
+    <fields>
+        <label>Date d'Enregistrement</label>
+        <name>Record_Date__c</name>
+    </fields>
+    <fields>
+        <label>Nombre de Sprints</label>
+        <name>Sprint_Count__c</name>
+    </fields>
+    <fields>
+        <label>Distance Totale (km)</label>
+        <name>Total_Distance_Km__c</name>
+    </fields>
+    <fields>
+        <label>Séance</label>
+        <name>Training_Session__c</name>
+    </fields>
+    <fields>
+        <label>Minutes Zone 1</label>
+        <name>Zone1_Minutes__c</name>
+    </fields>
+    <fields>
+        <label>Minutes Zone 2</label>
+        <name>Zone2_Minutes__c</name>
+    </fields>
+    <fields>
+        <label>Minutes Zone 3</label>
+        <name>Zone3_Minutes__c</name>
+    </fields>
+    <fields>
+        <label>Minutes Zone 4</label>
+        <name>Zone4_Minutes__c</name>
+    </fields>
+    <fields>
+        <label>Minutes Zone 5</label>
+        <name>Zone5_Minutes__c</name>
+    </fields>
+</CustomObjectTranslation>

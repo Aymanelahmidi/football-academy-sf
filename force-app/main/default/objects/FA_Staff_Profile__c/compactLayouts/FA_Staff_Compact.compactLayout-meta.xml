@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FA_Staff_Compact</fullName>
+    <fields>Display_Name__c</fields>
+    <fields>Staff_Role__c</fields>
+    <fields>Speciality__c</fields>
+    <fields>Phone__c</fields>
+    <label>Staff - Compact</label>
+</CompactLayout>

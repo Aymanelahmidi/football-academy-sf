@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <gender>Feminine</gender>
+    <fields>
+        <label>Catégorie</label>
+        <name>Category__c</name>
+    </fields>
+    <fields>
+        <label>Date de Fin</label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <label>Actif</label>
+        <name>Is_Active__c</name>
+    </fields>
+    <fields>
+        <label>Saison</label>
+        <name>Season__c</name>
+    </fields>
+    <fields>
+        <label>Date de Début</label>
+        <name>Start_Date__c</name>
+    </fields>
+    <fields>
+        <label>Type</label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>League</masterLabel>
+            <translation>Championnat</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cup</masterLabel>
+            <translation>Coupe</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tournament</masterLabel>
+            <translation>Tournoi</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Friendly</masterLabel>
+            <translation>Amical</translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

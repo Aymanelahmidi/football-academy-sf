@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Paramètres de l'Académie" icon-name="standard:settings">
+        <div class="slds-p-around_small">
+            <h3 class="slds-text-heading_small slds-m-bottom_small">Catégories</h3>
+            <template if:true={isLoading}><lightning-spinner alternative-text="Chargement..."></lightning-spinner></template>
+            <template if:false={isLoading}>
+                <lightning-datatable key-field="Id" data={categories} columns={categoryColumns} hide-checkbox-column></lightning-datatable>
+            </template>
+        </div>
+    </lightning-card>
+</template>

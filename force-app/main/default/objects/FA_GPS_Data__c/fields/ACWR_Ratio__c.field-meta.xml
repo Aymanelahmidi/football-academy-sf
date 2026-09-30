@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ACWR_Ratio__c</fullName>
+    <label>ACWR Ratio</label>
+    <type>Number</type>
+    <precision>6</precision>
+    <scale>2</scale>
+    <required>false</required>
+    <inlineHelpText>Ratio Charge Aiguë / Chronique. Optimal: 0.8-1.3</inlineHelpText>
+</CustomField>

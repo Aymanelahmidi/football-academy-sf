@@ -1,0 +1,36 @@
+<template>
+    <lightning-card title="Analyse Vidéo" icon-name="standard:video">
+        <div class="slds-p-around_small">
+            <div class="slds-grid slds-gutters slds-m-bottom_small">
+                <div class="slds-col slds-size_1-of-3">
+                    <lightning-combobox label="Type d'Analyse" value={selectedType} options={typeOptions} onchange={handleTypeChange}></lightning-combobox>
+                </div>
+                <div class="slds-col slds-size_1-of-3">
+                    <lightning-combobox label="Statut" value={selectedStatus} options={statusOptions} onchange={handleStatusChange}></lightning-combobox>
+                </div>
+            </div>
+            <p class="slds-m-bottom_small">{totalVideos} analyse(s) vidéo</p>
+            <template if:true={isLoading}><lightning-spinner alternative-text="Chargement..."></lightning-spinner></template>
+            <template if:false={isLoading}>
+                <div class="slds-grid slds-gutters slds-wrap">
+                    <template for:each={videos} for:item="v">
+                        <div key={v.Id} class="slds-col slds-size_1-of-3 slds-p-around_x-small">
+                            <div class="slds-box slds-box_link" data-id={v.Id} onclick={handleViewVideo}>
+                                <h3 class="slds-text-heading_small slds-truncate">{v.Name}</h3>
+                                <p class="slds-text-body_small">{v.matchName}</p>
+                                <p class="slds-text-body_small slds-text-color_weak">{v.Type__c} — {v.durationFormatted}</p>
+                                <div class="slds-m-top_x-small">
+                                    <lightning-badge label={v.Status__c}></lightning-badge>
+                                    <span class="slds-badge slds-theme_inverse slds-m-left_x-small">{v.annotationCount} annotations</span>
+                                </div>
+                                <template if:true={v.Tags__c}>
+                                    <p class="slds-m-top_xx-small slds-text-body_small">{v.Tags__c}</p>
+                                </template>
+                            </div>
+                        </div>
+                    </template>
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>

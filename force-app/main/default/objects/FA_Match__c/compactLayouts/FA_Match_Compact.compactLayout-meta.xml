@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FA_Match_Compact</fullName>
+    <fields>Match_Date__c</fields>
+    <fields>Opponent__c</fields>
+    <fields>Status__c</fields>
+    <fields>Goals_For__c</fields>
+    <fields>Goals_Against__c</fields>
+    <fields>Is_Home__c</fields>
+    <label>Match - Compact</label>
+</CompactLayout>

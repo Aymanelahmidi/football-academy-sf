@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Preparateur__c</fullName>
+    <label>Fitness Coach</label>
+    <type>Lookup</type>
+    <referenceTo>FA_Staff_Profile__c</referenceTo>
+    <relationshipName>GPS_Data_Managed</relationshipName>
+    <relationshipLabel>Données GPS Gérées</relationshipLabel>
+    <required>false</required>
+</CustomField>

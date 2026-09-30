@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Video_Analysis__c</fullName>
+    <label>Video Analysis</label>
+    <type>MasterDetail</type>
+    <referenceTo>FA_Video_Analysis__c</referenceTo>
+    <relationshipName>Annotations</relationshipName>
+    <relationshipLabel>Annotations</relationshipLabel>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+</CustomField>

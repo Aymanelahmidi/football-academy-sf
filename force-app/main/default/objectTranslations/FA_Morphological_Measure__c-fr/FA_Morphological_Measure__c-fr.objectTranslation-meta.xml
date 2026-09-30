@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <gender>Feminine</gender>
+    <fields>
+        <label>Envergure (cm)</label>
+        <name>Arm_Span_Cm__c</name>
+    </fields>
+    <fields>
+        <label>IMC</label>
+        <name>BMI__c</name>
+    </fields>
+    <fields>
+        <label>% Masse Grasse</label>
+        <name>Body_Fat_Percent__c</name>
+    </fields>
+    <fields>
+        <label>Taille (cm)</label>
+        <name>Height_Cm__c</name>
+    </fields>
+    <fields>
+        <label>Date de Mesure</label>
+        <name>Measure_Date__c</name>
+    </fields>
+    <fields>
+        <label>Masse Musculaire (kg)</label>
+        <name>Muscle_Mass_Kg__c</name>
+    </fields>
+    <fields>
+        <label>Joueur</label>
+        <name>Player__c</name>
+    </fields>
+    <fields>
+        <label>Poids (kg)</label>
+        <name>Weight_Kg__c</name>
+    </fields>
+</CustomObjectTranslation>

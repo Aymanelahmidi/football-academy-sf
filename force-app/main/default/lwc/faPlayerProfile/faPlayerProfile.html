@@ -1,0 +1,94 @@
+<template>
+    <template if:true={isLoading}>
+        <lightning-spinner alternative-text="Chargement..."></lightning-spinner>
+    </template>
+    <template if:false={isLoading}>
+        <lightning-card title={fullName} icon-name="standard:individual">
+            <div slot="actions">
+                <lightning-badge label={categoryName}></lightning-badge>
+                <lightning-badge label={player.Position__c}></lightning-badge>
+                <lightning-badge label={player.Status__c}></lightning-badge>
+            </div>
+            <div class="slds-p-around_small">
+                <lightning-tabset active-tab-value={activeTab} onactive={handleTabChange}>
+                    <lightning-tab label="Informations" value="info">
+                        <div class="slds-grid slds-gutters slds-wrap">
+                            <div class="slds-col slds-size_1-of-2">
+                                <dl class="slds-dl_horizontal">
+                                    <dt class="slds-dl_horizontal__label">Âge:</dt>
+                                    <dd class="slds-dl_horizontal__detail">{age}</dd>
+                                    <dt class="slds-dl_horizontal__label">Nationalité:</dt>
+                                    <dd class="slds-dl_horizontal__detail">{player.Nationality__c}</dd>
+                                    <dt class="slds-dl_horizontal__label">Pied Préféré:</dt>
+                                    <dd class="slds-dl_horizontal__detail">{player.Preferred_Foot__c}</dd>
+                                    <dt class="slds-dl_horizontal__label">Taille:</dt>
+                                    <dd class="slds-dl_horizontal__detail">{player.Height__c} cm</dd>
+                                    <dt class="slds-dl_horizontal__label">Poids:</dt>
+                                    <dd class="slds-dl_horizontal__detail">{player.Weight__c} kg</dd>
+                                </dl>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2">
+                                <dl class="slds-dl_horizontal">
+                                    <dt class="slds-dl_horizontal__label">N° Maillot:</dt>
+                                    <dd class="slds-dl_horizontal__detail">{player.Jersey_Number__c}</dd>
+                                    <dt class="slds-dl_horizontal__label">Email:</dt>
+                                    <dd class="slds-dl_horizontal__detail">{player.Email__c}</dd>
+                                    <dt class="slds-dl_horizontal__label">Téléphone:</dt>
+                                    <dd class="slds-dl_horizontal__detail">{player.Phone__c}</dd>
+                                    <dt class="slds-dl_horizontal__label">Date Inscription:</dt>
+                                    <dd class="slds-dl_horizontal__detail">
+                                        <lightning-formatted-date-time value={player.Join_Date__c}></lightning-formatted-date-time>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <template if:true={guardians.length}>
+                            <h3 class="slds-text-heading_small slds-m-top_medium">Tuteurs Légaux</h3>
+                            <template for:each={guardians} for:item="g">
+                                <div key={g.Id} class="slds-box slds-m-top_x-small">
+                                    <p><strong>{g.First_Name__c} {g.Last_Name__c}</strong> — {g.Relationship__c}</p>
+                                    <p>{g.Phone__c} | {g.Email__c}</p>
+                                </div>
+                            </template>
+                        </template>
+                    </lightning-tab>
+                    <lightning-tab label="Évaluations" value="evals">
+                        <template for:each={evaluations} for:item="ev">
+                            <div key={ev.Id} class="slds-box slds-m-bottom_x-small">
+                                <div class="slds-grid slds-gutters">
+                                    <div class="slds-col">
+                                        <p><strong>{ev.Type__c}</strong> — <lightning-formatted-date-time value={ev.Evaluation_Date__c}></lightning-formatted-date-time></p>
+                                        <p>Note Globale: <strong>{ev.Overall_Score__c}/100</strong></p>
+                                    </div>
+                                    <div class="slds-col">
+                                        <p>Tech: {ev.Technical_Score__c} | Tact: {ev.Tactical_Score__c} | Phys: {ev.Physical_Score__c}</p>
+                                        <p>Ment: {ev.Mental_Score__c} | Vit: {ev.Speed_Score__c} | End: {ev.Endurance_Score__c}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </template>
+                    </lightning-tab>
+                    <lightning-tab label="Blessures" value="injuries">
+                        <template for:each={injuries} for:item="inj">
+                            <div key={inj.Id} class="slds-box slds-m-bottom_x-small">
+                                <p><strong>{inj.Type__c}</strong> — {inj.Body_Part__c} ({inj.Severity__c})</p>
+                                <p>Statut: {inj.Status__c} | Retour prévu: <lightning-formatted-date-time value={inj.Expected_Return_Date__c}></lightning-formatted-date-time></p>
+                            </div>
+                        </template>
+                    </lightning-tab>
+                    <lightning-tab label="Données GPS" value="gps">
+                        <lightning-datatable key-field="Id" data={gpsData} columns={gpsColumns} hide-checkbox-column></lightning-datatable>
+                    </lightning-tab>
+                    <lightning-tab label="Morphologie" value="morpho">
+                        <template for:each={morphology} for:item="m">
+                            <div key={m.Id} class="slds-box slds-m-bottom_x-small">
+                                <p><lightning-formatted-date-time value={m.Measure_Date__c}></lightning-formatted-date-time></p>
+                                <p>Taille: {m.Height_Cm__c}cm | Poids: {m.Weight_Kg__c}kg | IMC: {m.BMI__c} | Masse Grasse: {m.Body_Fat_Percent__c}%</p>
+                            </div>
+                        </template>
+                    </lightning-tab>
+                </lightning-tabset>
+            </div>
+        </lightning-card>
+    </template>
+</template>

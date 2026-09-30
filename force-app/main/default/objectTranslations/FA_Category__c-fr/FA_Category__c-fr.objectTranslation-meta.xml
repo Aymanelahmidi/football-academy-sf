@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <gender>Feminine</gender>
+    <fields>
+        <label>Âge Maximum</label>
+        <name>Age_Max__c</name>
+    </fields>
+    <fields>
+        <label>Âge Minimum</label>
+        <name>Age_Min__c</name>
+    </fields>
+    <fields>
+        <label>Couleur</label>
+        <name>Color__c</name>
+    </fields>
+    <fields>
+        <label>Actif</label>
+        <name>Is_Active__c</name>
+    </fields>
+    <fields>
+        <label>Effectif Maximum</label>
+        <name>Max_Players__c</name>
+    </fields>
+    <fields>
+        <label>Nom Court</label>
+        <name>Short_Name__c</name>
+    </fields>
+</CustomObjectTranslation>

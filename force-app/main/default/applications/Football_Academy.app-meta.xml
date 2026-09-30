@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Académie de Football</label>
+    <description>Application de gestion complète pour académie de football : joueurs, entraînements, matchs, GPS, vidéo, médical, finances</description>
+    <formFactors>Large</formFactors>
+    <formFactors>Small</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <navType>Standard</navType>
+    <tabs>FA_Dashboard</tabs>
+    <tabs>FA_Player__c</tabs>
+    <tabs>FA_Category__c</tabs>
+    <tabs>FA_Training_Session__c</tabs>
+    <tabs>FA_Attendance__c</tabs>
+    <tabs>FA_Match__c</tabs>
+    <tabs>FA_Competition__c</tabs>
+    <tabs>FA_Evaluation__c</tabs>
+    <tabs>FA_Injury__c</tabs>
+    <tabs>FA_Medical_Record__c</tabs>
+    <tabs>FA_GPS_Data__c</tabs>
+    <tabs>FA_GPS_Tracking</tabs>
+    <tabs>FA_Video_Analysis__c</tabs>
+    <tabs>FA_Video_Studio</tabs>
+    <tabs>FA_Physical_Program__c</tabs>
+    <tabs>FA_Physical_Prep</tabs>
+    <tabs>FA_Fitness_Test__c</tabs>
+    <tabs>FA_Transaction__c</tabs>
+    <tabs>FA_Document__c</tabs>
+    <tabs>FA_Contract__c</tabs>
+    <tabs>FA_Team_Composition</tabs>
+    <tabs>FA_Calendar</tabs>
+    <tabs>FA_Morphological_Measure__c</tabs>
+    <tabs>FA_Staff_Profile__c</tabs>
+    <tabs>FA_Settings</tabs>
+    <uiType>Lightning</uiType>
+</CustomApplication>

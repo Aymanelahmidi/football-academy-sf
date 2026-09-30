@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Documents" icon-name="standard:document">
+        <div class="slds-p-around_small">
+            <template if:true={isLoading}><lightning-spinner alternative-text="Chargement..."></lightning-spinner></template>
+            <template if:false={isLoading}>
+                <lightning-datatable key-field="Id" data={documents} columns={columns} hide-checkbox-column></lightning-datatable>
+            </template>
+        </div>
+    </lightning-card>
+</template>

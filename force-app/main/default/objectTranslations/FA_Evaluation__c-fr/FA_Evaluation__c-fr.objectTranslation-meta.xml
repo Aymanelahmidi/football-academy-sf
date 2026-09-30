@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <gender>Feminine</gender>
+    <fields>
+        <label>Note Endurance</label>
+        <name>Endurance_Score__c</name>
+    </fields>
+    <fields>
+        <label>Date d'Évaluation</label>
+        <name>Evaluation_Date__c</name>
+    </fields>
+    <fields>
+        <label>Évaluateur</label>
+        <name>Evaluator__c</name>
+    </fields>
+    <fields>
+        <label>Note Mentale</label>
+        <name>Mental_Score__c</name>
+    </fields>
+    <fields>
+        <label>Note Globale</label>
+        <name>Overall_Score__c</name>
+    </fields>
+    <fields>
+        <label>Note Physique</label>
+        <name>Physical_Score__c</name>
+    </fields>
+    <fields>
+        <label>Joueur</label>
+        <name>Player__c</name>
+    </fields>
+    <fields>
+        <label>Recommandations</label>
+        <name>Recommendations__c</name>
+    </fields>
+    <fields>
+        <label>Note Vitesse</label>
+        <name>Speed_Score__c</name>
+    </fields>
+    <fields>
+        <label>Points Forts</label>
+        <name>Strengths__c</name>
+    </fields>
+    <fields>
+        <label>Note Tactique</label>
+        <name>Tactical_Score__c</name>
+    </fields>
+    <fields>
+        <label>Note Technique</label>
+        <name>Technical_Score__c</name>
+    </fields>
+    <fields>
+        <label>Type</label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation>Mensuelle</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarterly</masterLabel>
+            <translation>Trimestrielle</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Semi-Annual</masterLabel>
+            <translation>Semestrielle</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Special</masterLabel>
+            <translation>Spéciale</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Points à Améliorer</label>
+        <name>Weaknesses__c</name>
+    </fields>
+</CustomObjectTranslation>

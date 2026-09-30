@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FA_Injury_Compact</fullName>
+    <fields>Player__c</fields>
+    <fields>Type__c</fields>
+    <fields>Severity__c</fields>
+    <fields>Status__c</fields>
+    <fields>Injury_Date__c</fields>
+    <fields>Expected_Return_Date__c</fields>
+    <label>Blessure - Compact</label>
+</CompactLayout>

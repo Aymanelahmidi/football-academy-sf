@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <gender>Feminine</gender>
+    <fields>
+        <label>Retour Effectif</label>
+        <name>Actual_Return_Date__c</name>
+    </fields>
+    <fields>
+        <label>Partie du Corps</label>
+        <name>Body_Part__c</name>
+    </fields>
+    <fields>
+        <label>Médecin</label>
+        <name>Doctor__c</name>
+    </fields>
+    <fields>
+        <label>Retour Prévu</label>
+        <name>Expected_Return_Date__c</name>
+    </fields>
+    <fields>
+        <label>Date de Blessure</label>
+        <name>Injury_Date__c</name>
+    </fields>
+    <fields>
+        <label>Joueur</label>
+        <name>Player__c</name>
+    </fields>
+    <fields>
+        <label>Gravité</label>
+        <name>Severity__c</name>
+        <picklistValues>
+            <masterLabel>Minor</masterLabel>
+            <translation>Légère</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moderate</masterLabel>
+            <translation>Modérée</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Severe</masterLabel>
+            <translation>Grave</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Statut</label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>In Treatment</masterLabel>
+            <translation>En Traitement</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rehabilitation</masterLabel>
+            <translation>Rééducation</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recovered</masterLabel>
+            <translation>Guéri</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Type de Blessure</label>
+        <name>Type__c</name>
+    </fields>
+</CustomObjectTranslation>

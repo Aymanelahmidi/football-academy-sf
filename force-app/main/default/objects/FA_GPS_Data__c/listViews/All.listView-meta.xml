@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Player__c</columns>
+    <columns>Record_Date__c</columns>
+    <columns>Context__c</columns>
+    <columns>Total_Distance_Km__c</columns>
+    <columns>Max_Speed_Kmh__c</columns>
+    <columns>Avg_Speed_Kmh__c</columns>
+    <columns>Sprint_Count__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Toutes les données GPS</label>
+</ListView>

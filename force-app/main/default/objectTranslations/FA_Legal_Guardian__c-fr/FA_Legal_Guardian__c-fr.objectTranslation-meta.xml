@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <gender>Masculine</gender>
+    <fields>
+        <label>Adresse</label>
+        <name>Address__c</name>
+    </fields>
+    <fields>
+        <label>Prénom</label>
+        <name>First_Name__c</name>
+    </fields>
+    <fields>
+        <label>Contact d'Urgence</label>
+        <name>Is_Emergency_Contact__c</name>
+    </fields>
+    <fields>
+        <label>Contact Principal</label>
+        <name>Is_Primary_Contact__c</name>
+    </fields>
+    <fields>
+        <label>Nom</label>
+        <name>Last_Name__c</name>
+    </fields>
+    <fields>
+        <label>Téléphone</label>
+        <name>Phone__c</name>
+    </fields>
+    <fields>
+        <label>Joueur</label>
+        <name>Player__c</name>
+    </fields>
+    <fields>
+        <label>Lien de Parenté</label>
+        <name>Relationship__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <gender>Feminine</gender>
+    <fields>
+        <label>Montant</label>
+        <name>Amount__c</name>
+    </fields>
+    <fields>
+        <label>Catégorie</label>
+        <name>Category__c</name>
+    </fields>
+    <fields>
+        <label>Moyen de Paiement</label>
+        <name>Payment_Method__c</name>
+    </fields>
+    <fields>
+        <label>Joueur</label>
+        <name>Player__c</name>
+    </fields>
+    <fields>
+        <label>Référence</label>
+        <name>Reference__c</name>
+    </fields>
+    <fields>
+        <label>Statut</label>
+        <name>Status__c</name>
+    </fields>
+    <fields>
+        <label>Date</label>
+        <name>Transaction_Date__c</name>
+    </fields>
+    <fields>
+        <label>Type</label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Revenue</masterLabel>
+            <translation>Revenu</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expense</masterLabel>
+            <translation>Dépense</translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

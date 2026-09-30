@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FA_Competition_Compact</fullName>
+    <fields>Type__c</fields>
+    <fields>Season__c</fields>
+    <fields>Category__c</fields>
+    <fields>Start_Date__c</fields>
+    <fields>End_Date__c</fields>
+    <fields>Is_Active__c</fields>
+    <label>Compétition - Compact</label>
+</CompactLayout>

@@ -1,0 +1,49 @@
+<template>
+    <lightning-card title="Composition d'Équipe" icon-name="standard:groups">
+        <div class="slds-p-around_small">
+            <lightning-combobox label="Catégorie" value={selectedCategory} options={categories} onchange={handleCategoryChange} class="slds-m-bottom_small"></lightning-combobox>
+            <p class="slds-m-bottom_small">{totalPlayers} joueur(s)</p>
+            <template if:true={isLoading}><lightning-spinner alternative-text="Chargement..."></lightning-spinner></template>
+            <template if:false={isLoading}>
+                <div class="slds-grid slds-gutters slds-wrap">
+                    <div class="slds-col slds-size_1-of-4">
+                        <h3 class="slds-text-heading_small slds-m-bottom_x-small">Gardiens</h3>
+                        <template for:each={goalkeepers} for:item="p">
+                            <div key={p.id} class="slds-box slds-m-bottom_xx-small">
+                                <p>#{p.jerseyNumber} {p.firstName} {p.lastName}</p>
+                                <template if:true={p.hasActiveInjury}><lightning-badge label="Blessé" class="slds-theme_error"></lightning-badge></template>
+                            </div>
+                        </template>
+                    </div>
+                    <div class="slds-col slds-size_1-of-4">
+                        <h3 class="slds-text-heading_small slds-m-bottom_x-small">Défenseurs</h3>
+                        <template for:each={defenders} for:item="p">
+                            <div key={p.id} class="slds-box slds-m-bottom_xx-small">
+                                <p>#{p.jerseyNumber} {p.firstName} {p.lastName}</p>
+                                <template if:true={p.hasActiveInjury}><lightning-badge label="Blessé" class="slds-theme_error"></lightning-badge></template>
+                            </div>
+                        </template>
+                    </div>
+                    <div class="slds-col slds-size_1-of-4">
+                        <h3 class="slds-text-heading_small slds-m-bottom_x-small">Milieux</h3>
+                        <template for:each={midfielders} for:item="p">
+                            <div key={p.id} class="slds-box slds-m-bottom_xx-small">
+                                <p>#{p.jerseyNumber} {p.firstName} {p.lastName}</p>
+                                <template if:true={p.hasActiveInjury}><lightning-badge label="Blessé" class="slds-theme_error"></lightning-badge></template>
+                            </div>
+                        </template>
+                    </div>
+                    <div class="slds-col slds-size_1-of-4">
+                        <h3 class="slds-text-heading_small slds-m-bottom_x-small">Attaquants</h3>
+                        <template for:each={forwards} for:item="p">
+                            <div key={p.id} class="slds-box slds-m-bottom_xx-small">
+                                <p>#{p.jerseyNumber} {p.firstName} {p.lastName}</p>
+                                <template if:true={p.hasActiveInjury}><lightning-badge label="Blessé" class="slds-theme_error"></lightning-badge></template>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>

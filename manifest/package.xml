@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+
+    <!-- Apex Classes -->
+    <types>
+        <members>FA_DashboardController</members>
+        <members>FA_EvaluationService</members>
+        <members>FA_ExternalIntegration</members>
+        <members>FA_GpsIntegration</members>
+        <members>FA_GpsRestApi</members>
+        <members>FA_MatchController</members>
+        <members>FA_MatchService</members>
+        <members>FA_MedicalController</members>
+        <members>FA_MedicalService</members>
+        <members>FA_PerformanceController</members>
+        <members>FA_PerformanceService</members>
+        <members>FA_PlayerController</members>
+        <members>FA_PlayerService</members>
+        <members>FA_ServiceTest</members>
+        <members>FA_TestDataFactory</members>
+        <members>FA_TrainingController</members>
+        <members>FA_TrainingService</members>
+        <members>FA_VideoController</members>
+        <members>FA_VideoIntegration</members>
+        <members>FA_VideoService</members>
+        <name>ApexClass</name>
+    </types>
+
+    <!-- Lightning Web Components -->
+    <types>
+        <members>faAttendance</members>
+        <members>faCalendarView</members>
+        <members>faDashboard</members>
+        <members>faDocuments</members>
+        <members>faEvaluations</members>
+        <members>faFinance</members>
+        <members>faGpsData</members>
+        <members>faMatchList</members>
+        <members>faMedicalTracking</members>
+        <members>faPhysicalPrep</members>
+        <members>faPlayerList</members>
+        <members>faPlayerProfile</members>
+        <members>faSettings</members>
+        <members>faTeamComposition</members>
+        <members>faTrainingSessions</members>
+        <members>faVideoAnalysis</members>
+        <name>LightningComponentBundle</name>
+    </types>
+
+    <!-- Custom Objects -->
+    <types>
+        <members>FA_Academy_Setting__c</members>
+        <members>FA_Attendance__c</members>
+        <members>FA_Category__c</members>
+        <members>FA_Competition__c</members>
+        <members>FA_Contract__c</members>
+        <members>FA_Document__c</members>
+        <members>FA_Evaluation__c</members>
+        <members>FA_Fitness_Test__c</members>
+        <members>FA_GPS_Data__c</members>
+        <members>FA_Injury__c</members>
+        <members>FA_Legal_Guardian__c</members>
+        <members>FA_Match__c</members>
+        <members>FA_Match_Event__c</members>
+        <members>FA_Medical_Access_Log__c</members>
+        <members>FA_Medical_Record__c</members>
+        <members>FA_Morphological_Measure__c</members>
+        <members>FA_Physical_Program__c</members>
+        <members>FA_Player__c</members>
+        <members>FA_Session_Exercise__c</members>
+        <members>FA_Staff_Profile__c</members>
+        <members>FA_Training_Session__c</members>
+        <members>FA_Transaction__c</members>
+        <members>FA_Video_Analysis__c</members>
+        <members>FA_Video_Annotation__c</members>
+        <name>CustomObject</name>
+    </types>
+
+    <!-- Permission Sets -->
+    <types>
+        <members>FA_Coach_Access</members>
+        <members>FA_Full_Access</members>
+        <name>PermissionSet</name>
+    </types>
+
+    <version>66.0</version>
+
+    <!-- Translations -->
+    <types>
+        <members>fr</members>
+        <name>Translations</name>
+    </types>
+
+
+    <!-- Custom Object Translations -->
+    <types>
+        <members>FA_Academy_Setting__c-fr</members>
+        <members>FA_Attendance__c-fr</members>
+        <members>FA_Category__c-fr</members>
+        <members>FA_Competition__c-fr</members>
+        <members>FA_Contract__c-fr</members>
+        <members>FA_Document__c-fr</members>
+        <members>FA_Evaluation__c-fr</members>
+        <members>FA_Fitness_Test__c-fr</members>
+        <members>FA_GPS_Data__c-fr</members>
+        <members>FA_Injury__c-fr</members>
+        <members>FA_Legal_Guardian__c-fr</members>
+        <members>FA_Match_Event__c-fr</members>
+        <members>FA_Match__c-fr</members>
+        <members>FA_Medical_Access_Log__c-fr</members>
+        <members>FA_Medical_Record__c-fr</members>
+        <members>FA_Morphological_Measure__c-fr</members>
+        <members>FA_Physical_Program__c-fr</members>
+        <members>FA_Player__c-fr</members>
+        <members>FA_Session_Exercise__c-fr</members>
+        <members>FA_Staff_Profile__c-fr</members>
+        <members>FA_Training_Session__c-fr</members>
+        <members>FA_Transaction__c-fr</members>
+        <members>FA_Video_Analysis__c-fr</members>
+        <members>FA_Video_Annotation__c-fr</members>
+        <name>CustomObjectTranslation</name>
+    </types>
+
+</Package>

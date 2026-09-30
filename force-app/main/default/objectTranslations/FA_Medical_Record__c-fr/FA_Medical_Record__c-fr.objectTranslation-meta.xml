@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <gender>Masculine</gender>
+    <fields>
+        <label>Groupe Sanguin</label>
+        <name>Blood_Type__c</name>
+    </fields>
+    <fields>
+        <label>Conditions Chroniques</label>
+        <name>Chronic_Conditions__c</name>
+    </fields>
+    <fields>
+        <label>Aptitude</label>
+        <name>Fitness_Status__c</name>
+        <picklistValues>
+            <masterLabel>Fit</masterLabel>
+            <translation>Apte</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unfit</masterLabel>
+            <translation>Inapte</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conditional</masterLabel>
+            <translation>Sous Réserve</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Under Treatment</masterLabel>
+            <translation>En Soins</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Dernier Bilan</label>
+        <name>Last_Checkup_Date__c</name>
+    </fields>
+    <fields>
+        <label>Joueur</label>
+        <name>Player__c</name>
+    </fields>
+</CustomObjectTranslation>

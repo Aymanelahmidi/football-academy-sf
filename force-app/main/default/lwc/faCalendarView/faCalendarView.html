@@ -1,0 +1,33 @@
+<template>
+    <lightning-card title="Calendrier" icon-name="standard:date_input">
+        <div class="slds-p-around_small">
+            <p class="slds-m-bottom_small">{totalEvents} événement(s)</p>
+            <template if:true={isLoading}><lightning-spinner alternative-text="Chargement..."></lightning-spinner></template>
+            <template if:false={isLoading}>
+                <template for:each={sortedEvents} for:item="evt">
+                    <div key={evt.id} class="slds-box slds-m-bottom_xx-small">
+                        <div class="slds-grid slds-gutters">
+                            <div class="slds-col slds-size_1-of-6">
+                                <p class="slds-text-body_regular"><lightning-formatted-date-time value={evt.date}></lightning-formatted-date-time></p>
+                                <p class="slds-text-body_small">{evt.time}</p>
+                            </div>
+                            <div class="slds-col slds-size_3-of-6">
+                                <p class="slds-text-body_regular"><strong>{evt.title}</strong></p>
+                                <p class="slds-text-body_small slds-text-color_weak">{evt.location}</p>
+                            </div>
+                            <div class="slds-col slds-size_1-of-6">
+                                <lightning-badge label={evt.type}></lightning-badge>
+                            </div>
+                            <div class="slds-col slds-size_1-of-6">
+                                <lightning-badge label={evt.status}></lightning-badge>
+                                <template if:true={evt.score}>
+                                    <lightning-badge label={evt.score}></lightning-badge>
+                                </template>
+                            </div>
+                        </div>
+                    </div>
+                </template>
+            </template>
+        </div>
+    </lightning-card>
+</template>

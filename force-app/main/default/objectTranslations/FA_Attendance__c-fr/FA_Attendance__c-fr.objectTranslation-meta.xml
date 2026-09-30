@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <gender>Feminine</gender>
+    <fields>
+        <label>Date de Présence</label>
+        <name>Attendance_Date__c</name>
+    </fields>
+    <fields>
+        <label>Joueur</label>
+        <name>Player__c</name>
+    </fields>
+    <fields>
+        <label>Statut</label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Present</masterLabel>
+            <translation>Présent</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Absent</masterLabel>
+            <translation>Absent</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late</masterLabel>
+            <translation>Retard</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Excused</masterLabel>
+            <translation>Excusé</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Injured</masterLabel>
+            <translation>Blessé</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Séance</label>
+        <name>Training_Session__c</name>
+    </fields>
+</CustomObjectTranslation>

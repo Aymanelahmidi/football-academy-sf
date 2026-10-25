@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Players</fullName>
+    <label>Tous les joueurs</label>
+    <filterScope>Everything</filterScope>
+    <columns>NAME</columns>
+    <columns>Category__c</columns>
+    <columns>Position__c</columns>
+    <columns>Jersey_Number__c</columns>
+    <columns>Status__c</columns>
+    <columns>Age__c</columns>
+    <columns>Nationality__c</columns>
+</ListView>
+

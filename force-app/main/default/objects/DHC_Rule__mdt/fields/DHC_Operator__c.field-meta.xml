@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DHC_Operator__c</fullName>
+    <label>Operator</label>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value><fullName>EQUALS</fullName><default>false</default><label>EQUALS</label></value>
+            <value><fullName>NOT_EQUALS</fullName><default>false</default><label>NOT_EQUALS</label></value>
+            <value><fullName>LESS_THAN</fullName><default>false</default><label>LESS_THAN</label></value>
+            <value><fullName>CHANGED_TO</fullName><default>false</default><label>CHANGED_TO</label></value>
+            <value><fullName>CHANGED_FROM</fullName><default>false</default><label>CHANGED_FROM</label></value>
+            <value><fullName>ABSENT_AFTER</fullName><default>false</default><label>ABSENT_AFTER</label></value>
+        </valueSetDefinition>
+    </valueSet>
+    <trackTrending>false</trackTrending>
+</CustomField>

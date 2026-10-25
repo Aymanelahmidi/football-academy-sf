@@ -1,0 +1,13 @@
+/* Force the LWC to stretch full-width and remove
+   the default padding/margin from the Lightning page layout. */
+:host {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.dhc-root {
+    width: 100%;
+    min-height: 100vh;
+}

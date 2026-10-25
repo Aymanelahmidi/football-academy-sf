@@ -10,6 +10,6 @@
     <deploymentStatus>Deployed</deploymentStatus>
     <sharingModel>ReadWrite</sharingModel>
     <enableReports>true</enableReports>
-    <enableActivities>false</enableActivities>
+    <enableActivities>true</enableActivities>
     <enableSearch>true</enableSearch>
 </CustomObject>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>PermSet P1 - No Assignment</label>
+    <protected>false</protected>
+    <values>
+        <field>DHC_Component_Type__c</field>
+        <value xsi:type="xsd:string">PermissionSet</value>
+    </values>
+    <values>
+        <field>DHC_Attribute__c</field>
+        <value xsi:type="xsd:string">AssignmentCount</value>
+    </values>
+    <values>
+        <field>DHC_Operator__c</field>
+        <value xsi:type="xsd:string">LESS_THAN</value>
+    </values>
+    <values>
+        <field>DHC_Expected_Value__c</field>
+        <value xsi:type="xsd:string">1</value>
+    </values>
+    <values>
+        <field>DHC_Severity__c</field>
+        <value xsi:type="xsd:string">Critique</value>
+    </values>
+    <values>
+        <field>DHC_Message__c</field>
+        <value xsi:type="xsd:string">Permission set déployé sans aucune assignation. Personne n&apos;y a accès.</value>
+    </values>
+    <values>
+        <field>DHC_Is_Active__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+</CustomMetadata>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Matches</fullName>
+    <label>Tous les matchs</label>
+    <filterScope>Everything</filterScope>
+    <columns>NAME</columns>
+    <columns>Match_Date__c</columns>
+    <columns>Opponent__c</columns>
+    <columns>Category__c</columns>
+    <columns>Goals_For__c</columns>
+    <columns>Goals_Against__c</columns>
+    <columns>Status__c</columns>
+</ListView>
+

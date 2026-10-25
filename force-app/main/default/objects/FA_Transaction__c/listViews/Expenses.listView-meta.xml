@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <ListView xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Expenses</fullName>
     <columns>NAME</columns>
@@ -13,5 +13,6 @@
         <operation>equals</operation>
         <value>Expense</value>
     </filters>
-    <label>Dépenses</label>
+    <label>DÃ©penses</label>
 </ListView>
+

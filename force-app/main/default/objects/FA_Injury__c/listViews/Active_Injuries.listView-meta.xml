@@ -1,18 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <ListView xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Active_Injuries</fullName>
-    <columns>NAME</columns>
-    <columns>Player__c</columns>
-    <columns>Type__c</columns>
-    <columns>Body_Part__c</columns>
-    <columns>Severity__c</columns>
-    <columns>Injury_Date__c</columns>
-    <columns>Expected_Return_Date__c</columns>
+    <label>Blessures actives</label>
     <filterScope>Everything</filterScope>
     <filters>
         <field>Status__c</field>
-        <operation>equals</operation>
-        <value>Active</value>
+        <operation>notEqual</operation>
+        <value>Recovered</value>
     </filters>
-    <label>Blessures actives</label>
+    <columns>NAME</columns>
+    <columns>Player__c</columns>
+    <columns>Type__c</columns>
+    <columns>Severity__c</columns>
+    <columns>Status__c</columns>
+    <columns>Expected_Return_Date__c</columns>
 </ListView>
+

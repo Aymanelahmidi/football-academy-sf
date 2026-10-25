@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Deployment Health Check</label>
+    <description>DHC — Monitor and compare Salesforce org configuration across deployments.</description>
+    <defaultLandingTab>DHC_Home</defaultLandingTab>
+    <tabs>DHC_Home</tabs>
+    <formFactors>Large</formFactors>
+    <uiType>Lightning</uiType>
+</CustomApplication>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>First_Name_Required</fullName>
+    <active>true</active>
+    <description>Le prénom du joueur est obligatoire</description>
+    <errorConditionFormula>ISBLANK(First_Name__c)</errorConditionFormula>
+    <errorMessage>Le prénom est obligatoire.</errorMessage>
+    <errorDisplayField>First_Name__c</errorDisplayField>
+</ValidationRule>

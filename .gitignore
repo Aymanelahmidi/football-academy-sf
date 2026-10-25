@@ -56,15 +56,11 @@ venv/
 env/
 *.pyc
 
-# Scripts one-shot (debug / migration / audit) — garder en local uniquement
-scripts/data/*.py
-scripts/data/*.txt
-scripts/data/*.sh
-scripts/data/check_*.apex
-scripts/data/inventory_*.apex
-scripts/data/list_*.apex
-scripts/data/demo_data*.apex
-scripts/apex/
+# Scripts locaux (debug / migration / audit / deploy) — jamais dans le repo
+scripts/
+
+# Manifests de deploy (gérés en local)
+manifest/
 
 # ============================================================
 # IDE & EDITEURS
@@ -121,6 +117,14 @@ nul
 # Historique de sessions et plans de travail temporaires
 .claude/projects/
 .claude/plans/
+
+# ============================================================
+# DHC UI (React / Vite)
+# ============================================================
+dhc-ui/node_modules/
+dhc-ui/dist/
+# Maquettes HTML de design (reference locale, pas dans le repo)
+dhc-ui/maquettes/
 
 # ============================================================
 # FICHIERS LOCAUX DIVERS

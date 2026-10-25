@@ -1,17 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <ListView xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Injured_Players</fullName>
-    <columns>NAME</columns>
-    <columns>First_Name__c</columns>
-    <columns>Last_Name__c</columns>
-    <columns>Category__c</columns>
-    <columns>Position__c</columns>
-    <columns>Jersey_Number__c</columns>
+    <label>Joueurs blessés</label>
     <filterScope>Everything</filterScope>
     <filters>
         <field>Status__c</field>
         <operation>equals</operation>
         <value>Injured</value>
     </filters>
-    <label>Joueurs blessés</label>
+    <columns>NAME</columns>
+    <columns>Category__c</columns>
+    <columns>Position__c</columns>
+    <columns>Status__c</columns>
 </ListView>
+

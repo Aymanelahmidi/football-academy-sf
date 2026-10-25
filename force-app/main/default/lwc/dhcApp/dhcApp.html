@@ -1,0 +1,22 @@
+<template>
+    <template lwc:if={isLoading}>
+        <lightning-spinner
+            alternative-text="Chargement DHC UI…"
+            size="medium">
+        </lightning-spinner>
+    </template>
+
+    <template lwc:if={hasError}>
+        <div class="slds-notify slds-notify_alert slds-alert_error" role="alert">
+            <span class="slds-assistive-text">Erreur</span>
+            <p>{errorMessage}</p>
+        </div>
+    </template>
+
+    <!--
+        lwc:dom="manual" is mandatory.
+        Without it the LWC engine overwrites the React DOM on every re-render.
+        Do NOT add child elements here — React owns this node entirely.
+    -->
+    <div class="dhc-root" lwc:dom="manual"></div>
+</template>

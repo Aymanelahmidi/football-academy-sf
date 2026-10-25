@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Flow F2 - Out Of Date</label>
+    <protected>false</protected>
+    <values>
+        <field>DHC_Component_Type__c</field>
+        <value xsi:type="xsd:string">Flow</value>
+    </values>
+    <values>
+        <field>DHC_Attribute__c</field>
+        <value xsi:type="xsd:string">IsOutOfDate</value>
+    </values>
+    <values>
+        <field>DHC_Operator__c</field>
+        <value xsi:type="xsd:string">EQUALS</value>
+    </values>
+    <values>
+        <field>DHC_Expected_Value__c</field>
+        <value xsi:type="xsd:string">true</value>
+    </values>
+    <values>
+        <field>DHC_Severity__c</field>
+        <value xsi:type="xsd:string">Critique</value>
+    </values>
+    <values>
+        <field>DHC_Message__c</field>
+        <value xsi:type="xsd:string">La version active n'est pas la dernière version déployée. L'ancien comportement reste en vigueur.</value>
+    </values>
+    <values>
+        <field>DHC_Is_Active__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+</CustomMetadata>

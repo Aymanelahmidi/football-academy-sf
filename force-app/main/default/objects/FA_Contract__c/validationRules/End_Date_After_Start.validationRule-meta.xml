@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>End_Date_After_Start</fullName>
+    <active>true</active>
+    <description>La date de fin du contrat doit être postérieure à la date de début</description>
+    <errorConditionFormula>AND(
+  NOT(ISBLANK(Start_Date__c)),
+  NOT(ISBLANK(End_Date__c)),
+  End_Date__c &lt;= Start_Date__c
+)</errorConditionFormula>
+    <errorMessage>La date de fin doit être postérieure à la date de début.</errorMessage>
+    <errorDisplayField>End_Date__c</errorDisplayField>
+</ValidationRule>

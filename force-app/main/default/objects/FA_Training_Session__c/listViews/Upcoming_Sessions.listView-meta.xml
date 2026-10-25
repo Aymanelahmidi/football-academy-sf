@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Upcoming_Sessions</fullName>
+    <label>Séances à venir</label>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Scheduled</value>
+    </filters>
+    <columns>NAME</columns>
+    <columns>Session_Date__c</columns>
+    <columns>Category__c</columns>
+    <columns>Type__c</columns>
+    <columns>Location__c</columns>
+    <columns>Coach__c</columns>
+    <columns>Status__c</columns>
+</ListView>
+

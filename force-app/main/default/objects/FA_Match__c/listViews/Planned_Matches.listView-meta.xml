@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <ListView xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Planned_Matches</fullName>
     <columns>NAME</columns>
@@ -11,7 +11,8 @@
     <filters>
         <field>Status__c</field>
         <operation>equals</operation>
-        <value>Planifié</value>
+        <value>PlanifiÃ©</value>
     </filters>
-    <label>Matchs planifiés</label>
+    <label>Matchs planifiÃ©s</label>
 </ListView>
+

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Distance_Positive</fullName>
+    <active>true</active>
+    <description>Les valeurs GPS (distance, vitesse) ne peuvent pas être négatives</description>
+    <errorConditionFormula>OR(
+  AND(NOT(ISBLANK(Total_Distance_Km__c)), Total_Distance_Km__c &lt; 0),
+  AND(NOT(ISBLANK(Avg_Speed_Kmh__c)),     Avg_Speed_Kmh__c     &lt; 0),
+  AND(NOT(ISBLANK(Max_Speed_Kmh__c)),     Max_Speed_Kmh__c     &lt; 0),
+  AND(NOT(ISBLANK(Sprint_Count__c)),      Sprint_Count__c      &lt; 0)
+)</errorConditionFormula>
+    <errorMessage>Les valeurs GPS ne peuvent pas être négatives.</errorMessage>
+</ValidationRule>

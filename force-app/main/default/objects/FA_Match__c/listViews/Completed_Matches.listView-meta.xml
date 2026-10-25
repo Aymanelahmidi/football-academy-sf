@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <ListView xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Completed_Matches</fullName>
     <columns>NAME</columns>
@@ -12,7 +12,8 @@
     <filters>
         <field>Status__c</field>
         <operation>equals</operation>
-        <value>Terminé</value>
+        <value>TerminÃ©</value>
     </filters>
-    <label>Matchs terminés</label>
+    <label>Matchs terminÃ©s</label>
 </ListView>
+

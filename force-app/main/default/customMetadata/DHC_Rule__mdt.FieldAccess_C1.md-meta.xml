@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>FieldAccess C1 - No Read Access</label>
+    <protected>false</protected>
+    <values>
+        <field>DHC_Component_Type__c</field>
+        <value xsi:type="xsd:string">FieldAccess</value>
+    </values>
+    <values>
+        <field>DHC_Attribute__c</field>
+        <value xsi:type="xsd:string">AnyRead</value>
+    </values>
+    <values>
+        <field>DHC_Operator__c</field>
+        <value xsi:type="xsd:string">EQUALS</value>
+    </values>
+    <values>
+        <field>DHC_Expected_Value__c</field>
+        <value xsi:type="xsd:string">false</value>
+    </values>
+    <values>
+        <field>DHC_Severity__c</field>
+        <value xsi:type="xsd:string">Critique</value>
+    </values>
+    <values>
+        <field>DHC_Message__c</field>
+        <value xsi:type="xsd:string">Le champ {component} n&apos;est lisible par aucun permission set. Il a été livré sans visibilité : les utilisateurs non administrateurs ne le verront pas.</value>
+    </values>
+    <values>
+        <field>DHC_Is_Active__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+</CustomMetadata>

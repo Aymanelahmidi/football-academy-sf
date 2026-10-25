@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>PermSet P2 - Assignment Decreased</label>
+    <protected>false</protected>
+    <values>
+        <field>DHC_Component_Type__c</field>
+        <value xsi:type="xsd:string">PermissionSet</value>
+    </values>
+    <values>
+        <field>DHC_Attribute__c</field>
+        <value xsi:type="xsd:string">AssignmentCount</value>
+    </values>
+    <values>
+        <field>DHC_Operator__c</field>
+        <value xsi:type="xsd:string">CHANGED_FROM</value>
+    </values>
+    <values>
+        <field>DHC_Expected_Value__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>DHC_Severity__c</field>
+        <value xsi:type="xsd:string">Avertissement</value>
+    </values>
+    <values>
+        <field>DHC_Message__c</field>
+        <value xsi:type="xsd:string">Désactivée : CHANGED_FROM avec Expected_Value null n&apos;est pas évaluable par le moteur (valeur attendue obligatoire). La diminution d&apos;assignations est couverte par PermSet_P1 (LESS_THAN 1). Voir ADR-005 dans docs/decisions.md.</value>
+    </values>
+    <values>
+        <field>DHC_Is_Active__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+</CustomMetadata>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ACWR_Risk__c</fullName>
+    <label>ACWR Risk Level</label>
+    <description>Niveau de risque automatique basé sur le ratio Acute:Chronic Workload</description>
+    <type>Text</type>
+    <formula>IF(ISBLANK(ACWR_Ratio__c), "Non calculé",
+  IF(ACWR_Ratio__c >= 1.5, "Risque élevé",
+  IF(ACWR_Ratio__c >= 1.2, "Attention",
+  IF(ACWR_Ratio__c >= 0.8, "Optimal", "Sous-charge"))))</formula>
+</CustomField>

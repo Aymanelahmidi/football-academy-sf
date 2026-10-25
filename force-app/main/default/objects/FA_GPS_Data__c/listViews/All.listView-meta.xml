@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <ListView xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>All</fullName>
     <columns>NAME</columns>
@@ -10,5 +10,6 @@
     <columns>Avg_Speed_Kmh__c</columns>
     <columns>Sprint_Count__c</columns>
     <filterScope>Everything</filterScope>
-    <label>Toutes les données GPS</label>
+    <label>Toutes les donnÃ©es GPS</label>
 </ListView>
+

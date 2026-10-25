@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Expired__c</fullName>
+    <label>Is Expired</label>
+    <description>Vrai si la date d'expiration du document est dépassée</description>
+    <type>Checkbox</type>
+    <formula>AND(NOT(ISBLANK(Expiry_Date__c)), Expiry_Date__c &lt; TODAY())</formula>
+</CustomField>

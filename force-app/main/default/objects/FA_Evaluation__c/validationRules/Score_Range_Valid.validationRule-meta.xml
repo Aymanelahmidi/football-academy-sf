@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Score_Range_Valid</fullName>
+    <active>true</active>
+    <description>Tous les scores d'évaluation doivent être entre 0 et 10</description>
+    <errorConditionFormula>OR(
+  AND(NOT(ISBLANK(Technical_Score__c)),   OR(Technical_Score__c   &lt; 0, Technical_Score__c   &gt; 10)),
+  AND(NOT(ISBLANK(Physical_Score__c)),    OR(Physical_Score__c    &lt; 0, Physical_Score__c    &gt; 10)),
+  AND(NOT(ISBLANK(Tactical_Score__c)),    OR(Tactical_Score__c    &lt; 0, Tactical_Score__c    &gt; 10)),
+  AND(NOT(ISBLANK(Mental_Score__c)),      OR(Mental_Score__c      &lt; 0, Mental_Score__c      &gt; 10)),
+  AND(NOT(ISBLANK(Speed_Score__c)),       OR(Speed_Score__c       &lt; 0, Speed_Score__c       &gt; 10)),
+  AND(NOT(ISBLANK(Endurance_Score__c)),   OR(Endurance_Score__c   &lt; 0, Endurance_Score__c   &gt; 10))
+)</errorConditionFormula>
+    <errorMessage>Les scores doivent être compris entre 0 et 10.</errorMessage>
+</ValidationRule>

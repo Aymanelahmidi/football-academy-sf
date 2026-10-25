@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>FieldAccess Scope</label>
+    <protected>false</protected>
+    <values>
+        <field>DHC_Component_Type__c</field>
+        <value xsi:type="xsd:string">FieldAccess</value>
+    </values>
+    <values>
+        <field>DHC_Source_Object__c</field>
+        <value xsi:type="xsd:string">FieldPermissions</value>
+    </values>
+    <values>
+        <field>DHC_Target_Objects__c</field>
+        <value xsi:type="xsd:string">DHC_Component__c,DHC_Deployment__c,DHC_Finding__c</value>
+    </values>
+    <values>
+        <field>DHC_Sequence__c</field>
+        <value xsi:type="xsd:double">50</value>
+    </values>
+    <values>
+        <field>DHC_Is_Active__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+</CustomMetadata>

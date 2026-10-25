@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Date_Of_Birth_Past</fullName>
+    <active>true</active>
+    <description>La date de naissance doit être dans le passé</description>
+    <errorConditionFormula>AND(NOT(ISBLANK(Date_of_Birth__c)), Date_of_Birth__c >= TODAY())</errorConditionFormula>
+    <errorMessage>La date de naissance doit être antérieure à aujourd'hui.</errorMessage>
+    <errorDisplayField>Date_of_Birth__c</errorDisplayField>
+</ValidationRule>

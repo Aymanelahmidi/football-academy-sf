@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>EntityDef E1 - InDevelopment</label>
+    <protected>false</protected>
+    <values>
+        <field>DHC_Component_Type__c</field>
+        <value xsi:type="xsd:string">EntityDef</value>
+    </values>
+    <values>
+        <field>DHC_Attribute__c</field>
+        <value xsi:type="xsd:string">DeploymentStatus</value>
+    </values>
+    <values>
+        <field>DHC_Operator__c</field>
+        <value xsi:type="xsd:string">EQUALS</value>
+    </values>
+    <values>
+        <field>DHC_Expected_Value__c</field>
+        <value xsi:type="xsd:string">InDevelopment</value>
+    </values>
+    <values>
+        <field>DHC_Severity__c</field>
+        <value xsi:type="xsd:string">Critique</value>
+    </values>
+    <values>
+        <field>DHC_Message__c</field>
+        <value xsi:type="xsd:string">Objet déployé mais invisible aux utilisateurs non-admin.</value>
+    </values>
+    <values>
+        <field>DHC_Is_Active__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+</CustomMetadata>

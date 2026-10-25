@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <ListView xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Active_Competitions</fullName>
     <columns>NAME</columns>
@@ -13,5 +13,6 @@
         <operation>equals</operation>
         <value>1</value>
     </filters>
-    <label>Compétitions actives</label>
+    <label>CompÃ©titions actives</label>
 </ListView>
+

@@ -1,18 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <ListView xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Active_Players</fullName>
+    <label>Joueurs actifs</label>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Active</value>
+    </filters>
     <columns>NAME</columns>
-    <columns>First_Name__c</columns>
-    <columns>Last_Name__c</columns>
     <columns>Category__c</columns>
     <columns>Position__c</columns>
     <columns>Jersey_Number__c</columns>
-    <columns>Join_Date__c</columns>
-    <filterScope>Everything</filterScope>
-    <filters>
-        <field>Is_Active__c</field>
-        <operation>equals</operation>
-        <value>1</value>
-    </filters>
-    <label>Joueurs actifs</label>
+    <columns>Age__c</columns>
+    <columns>Nationality__c</columns>
 </ListView>
+

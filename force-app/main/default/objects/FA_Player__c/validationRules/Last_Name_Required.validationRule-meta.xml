@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Last_Name_Required</fullName>
+    <active>true</active>
+    <description>Le nom de famille du joueur est obligatoire</description>
+    <errorConditionFormula>ISBLANK(Last_Name__c)</errorConditionFormula>
+    <errorMessage>Le nom de famille est obligatoire.</errorMessage>
+    <errorDisplayField>Last_Name__c</errorDisplayField>
+</ValidationRule>

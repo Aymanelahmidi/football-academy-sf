@@ -4,6 +4,7 @@
     <label>Overall Score</label>
     <type>Number</type>
     <precision>4</precision>
-    <scale>0</scale>
+    <scale>1</scale>
     <required>false</required>
+    <description>Score global calculé automatiquement — moyenne des 6 critères</description>
 </CustomField>
